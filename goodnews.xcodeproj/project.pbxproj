@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		271941E32839BC97000D187F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271941E22839BC97000D187F /* AppDelegate.swift */; };
 		271941E52839BC97000D187F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271941E42839BC97000D187F /* SceneDelegate.swift */; };
-		271941E72839BC97000D187F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271941E62839BC97000D187F /* ViewController.swift */; };
 		271941EA2839BC97000D187F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271941E82839BC97000D187F /* Main.storyboard */; };
 		271941ED2839BC97000D187F /* goodnews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 271941EB2839BC97000D187F /* goodnews.xcdatamodeld */; };
 		271941EF2839BC98000D187F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271941EE2839BC98000D187F /* Assets.xcassets */; };
 		271941F22839BC98000D187F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271941F02839BC98000D187F /* LaunchScreen.storyboard */; };
+		271941FB2839BCD9000D187F /* NewListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271941FA2839BCD9000D187F /* NewListTableViewController.swift */; };
+		27A0ACC4283ACFC4008CAD24 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0ACC3283ACFC4008CAD24 /* WebServices.swift */; };
+		27A0ACC7283AD6C1008CAD24 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0ACC6283AD6C1008CAD24 /* Article.swift */; };
+		27A0ACCD283AE274008CAD24 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0ACCC283AE274008CAD24 /* ArticleTableViewCell.swift */; };
+		27A0ACCF283AEE8A008CAD24 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0ACCE283AEE8A008CAD24 /* ArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		271941DF2839BC97000D187F /* goodnews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goodnews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271941E22839BC97000D187F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		271941E42839BC97000D187F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		271941E62839BC97000D187F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		271941E92839BC97000D187F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		271941EC2839BC97000D187F /* goodnews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = goodnews.xcdatamodel; sourceTree = "<group>"; };
 		271941EE2839BC98000D187F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271941F12839BC98000D187F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		271941F32839BC98000D187F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271941FA2839BCD9000D187F /* NewListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListTableViewController.swift; sourceTree = "<group>"; };
+		27A0ACC3283ACFC4008CAD24 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		27A0ACC6283AD6C1008CAD24 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		27A0ACCC283AE274008CAD24 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		27A0ACCE283AEE8A008CAD24 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,13 @@
 		271941E12839BC97000D187F /* goodnews */ = {
 			isa = PBXGroup;
 			children = (
+				27A0ACCB283AE25D008CAD24 /* Cells */,
+				27A0ACC8283ADDEC008CAD24 /* View Models */,
+				27A0ACC5283AD6B0008CAD24 /* Models */,
+				27A0ACC2283ACFAC008CAD24 /* Services */,
+				271941F92839BCA3000D187F /* Controllers */,
 				271941E22839BC97000D187F /* AppDelegate.swift */,
 				271941E42839BC97000D187F /* SceneDelegate.swift */,
-				271941E62839BC97000D187F /* ViewController.swift */,
 				271941E82839BC97000D187F /* Main.storyboard */,
 				271941EE2839BC98000D187F /* Assets.xcassets */,
 				271941F02839BC98000D187F /* LaunchScreen.storyboard */,
@@ -68,6 +80,46 @@
 				271941EB2839BC97000D187F /* goodnews.xcdatamodeld */,
 			);
 			path = goodnews;
+			sourceTree = "<group>";
+		};
+		271941F92839BCA3000D187F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				271941FA2839BCD9000D187F /* NewListTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		27A0ACC2283ACFAC008CAD24 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27A0ACC3283ACFC4008CAD24 /* WebServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		27A0ACC5283AD6B0008CAD24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27A0ACC6283AD6C1008CAD24 /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27A0ACC8283ADDEC008CAD24 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				27A0ACCE283AEE8A008CAD24 /* ArticleViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		27A0ACCB283AE25D008CAD24 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				27A0ACCC283AE274008CAD24 /* ArticleTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271941E72839BC97000D187F /* ViewController.swift in Sources */,
+				271941FB2839BCD9000D187F /* NewListTableViewController.swift in Sources */,
+				27A0ACCF283AEE8A008CAD24 /* ArticleViewModel.swift in Sources */,
+				27A0ACC4283ACFC4008CAD24 /* WebServices.swift in Sources */,
+				27A0ACC7283AD6C1008CAD24 /* Article.swift in Sources */,
 				271941E32839BC97000D187F /* AppDelegate.swift in Sources */,
+				27A0ACCD283AE274008CAD24 /* ArticleTableViewCell.swift in Sources */,
 				271941E52839BC97000D187F /* SceneDelegate.swift in Sources */,
 				271941ED2839BC97000D187F /* goodnews.xcdatamodeld in Sources */,
 			);
@@ -297,6 +353,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,6 +382,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
